@@ -6,12 +6,24 @@ class CategoriesRepository {
     return rows;
   }
 
+  async findById(id) {
+    const row = db.query(
+      'SELECT name FROM categories WHERE id = $1',
+      [id],
+    );
+
+    return row;
+  }
+
   async create({ name }) {
-    const [row] = await db.query(`
+    const [row] = await db.query(
+      `
       INSERT INTO categories(name)
       VALUES($1)
       RETURNING *
-    `, [name]);
+    `,
+      [name],
+    );
 
     return row;
   }
