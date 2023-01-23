@@ -1,7 +1,11 @@
 SQL INJECTION
 Evitar utilizar interpolação com template strings;
 
+DOCKER
+docker exec -it pg bash -> executa o container de forma interativa
+
 POSTGRES
+psql -U <nome-usuario> -> logar no postgres
 \l -> lista todos os databases;
 \c mycontacts(exemplo) -> conecta a base de dados descrita;
 \dt -> lista todas as tabelas
