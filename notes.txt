@@ -1,0 +1,9 @@
+SQL INJECTION
+Evitar utilizar interpolação com template strings;
+
+POSTGRES
+\l -> lista todos os databases;
+\c mycontacts(exemplo) -> conecta a base de dados descrita;
+\dt -> lista todas as tabelas
+
+
